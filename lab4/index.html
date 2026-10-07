@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 04: Flexbox ба CSS Grid Layout</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS файл холбох -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation (Flexbox ашиглана) -->
+    <header class="site-header">
+        <div class="logo">
+            <h2>DevPortal</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Эхлэл</a></li>
+                <li><a href="#">Мэдээлэл</a></li>
+                <li><a href="#">Бүтээгдэхүүн</a></li>
+                <li><a href="#">Холбоо барих</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn btn-outline">Нэвтрэх</button>
+            <button class="btn btn-primary">Бүртгүүлэх</button>
+        </div>
+    </header>
+
+    <!-- Page Layout Container (Grid ашиглана) -->
+    <div class="layout-container">
+
+        <!-- Үндсэн агуулга (Main Content) -->
+        <main class="main-content">
+            <section class="hero-section">
+                <h1>CSS Flexbox ба Grid Систем</h1>
+                <p>Олон хэсэгтэй бодит вэб хуудасны бүтцийг орчин үеийн CSS технологиор зохион байгуулах лабораторийн ажил.</p>
+            </section>
+
+            <section class="card-section">
+                <h2>Онцлох Катууд (Grid Layout)</h2>
+                <!-- 3 баганатай Картуудын Grid -->
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-tag">HTML5</div>
+                        <h3>Семантик Бүтэц</h3>
+                        <p>Вэб хуудасны агуулгыг утга учиртай, зөв бүтэцтэйгээр заглах семантик тагууд.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">CSS3</div>
+                        <h3>Flexbox Элемент</h3>
+                        <p>Нэг хэмжээст (1D) зэрэгцүүлэлт, зайн хуваарилалтыг хялбар хийх Flexbox систем.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">Layout</div>
+                        <h3>CSS Grid Магнай</h3>
+                        <p>Хоёр хэмжээст (2D) багана болон мөр бүхий нарийн макетуудыг угсарч хийх Grid систем.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">Design</div>
+                        <h3>Responsive Дизайн</h3>
+                        <p>Төрөл бүрийн дэлгэцийн хэмжээнд таарч уян хатан харагдах дизайны шийдэл.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">UI/UX</div>
+                        <h3>Хэрэглэгчийн Туршлага</h3>
+                        <p>Цэгцтэй, ойлгомжтой, үзэмжтэй харагдах интерфэйс бүтээх зарчмууд.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">GitHub</div>
+                        <h3>Хувилбарын Хяналт</h3>
+                        <p>Төслийн кодоо олон нийтэд нээлттэй байршуулах болон загварыг нийтлэх.</p>
+                        <a href="#" class="card-link">Цааш унших &rarr;</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Хажуугийн цэс (Sidebar) -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Ангилал</h3>
+                <ul class="widget-list">
+                    <li><a href="#">Веб хөгжүүлэлт <span>(12)</span></a></li>
+                    <li><a href="#">Програмчлал <span>(8)</span></a></li>
+                    <li><a href="#">Өгөгдлийн сан <span>(5)</span></a></li>
+                    <li><a href="#">Интерфэйс дизайн <span>(9)</span></a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Сүүлийн үеийн мэдээ</h3>
+                <div class="recent-post">
+                    <h4>Flexbox vs Grid ялгаа</h4>
+                    <p>Алинаар нь вэб макетаа хийх вэ?</p>
+                </div>
+                <div class="recent-post">
+                    <h4>CSS Gap шинж чанар</h4>
+                    <p>Зай авах хамгийн хялбар арга.</p>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Веб хөгжүүлэлт лаборатори 04. Бүх эрх хуулиар хамгаалагдсан.</p>
+            <ul class="footer-links">
+                <li><a href="#">Нөхцөл</a></li>
+                <li><a href="#">Нууцлал</a></li>
+                <li><a href="#">Тусламж</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
