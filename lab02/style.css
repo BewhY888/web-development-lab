@@ -1,0 +1,199 @@
+/* Үндсэн фонт болон хэв маяг */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header загвар */
+.main-header {
+    background-color: #1e293b;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #38bdf8;
+}
+
+/* Үндсэн контент болон Box Model */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.form-section, .info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+/* Position: relative & absolute жишээ (Badge) */
+.header-badge-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.header-badge-container h2 {
+    display: inline-block;
+    color: #0f172a;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Fieldset ба Input загварууд */
+.form-group {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group legend {
+    font-weight: bold;
+    color: #2563eb;
+    padding: 0 0.5rem;
+}
+
+.input-field {
+    margin-bottom: 1.2rem;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.inline-options, .checkbox-list {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.4rem;
+}
+
+/* Товчнуудын загвар */
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #94a3b8;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #64748b;
+}
+
+/* Жагсаалт ба Хүснэгт */
+.interest-list {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.grades-table th, .grades-table td {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.grades-table th {
+    background-color: #f1f5f9;
+}
+
+/* Footer загвар */
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: 2rem;
+}
